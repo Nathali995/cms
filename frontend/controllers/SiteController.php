@@ -65,6 +65,11 @@ class SiteController extends Controller
         ];
     }
 
+    
+    public function actionBlogvista()
+    {
+        return $this->render('blogvista');
+    }
     /**
      * Displays homepage.
      *
