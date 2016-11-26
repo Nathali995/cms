@@ -51,9 +51,10 @@ return [
             'enableUnconfirmedLogin' => true,
         'confirmWithin' => 21600,
         'cost' => 12,
-        'admins' => ['admin']
+        'admins' => ['admin'],
+            
         ],
-
+        'rbac' => 'dektrium\rbac\RbacWebModule',
     ],
     'params' => $params,
 ];
