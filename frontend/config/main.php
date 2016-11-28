@@ -41,6 +41,9 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                ['class' => 'yii\rest\UrlRule', 
+                    'pluralize'=>false,
+                    'controller' => 'api/default'],
             ],
         ],
         
@@ -55,6 +58,11 @@ return [
             
         ],
         'rbac' => 'dektrium\rbac\RbacWebModule',
+        
+        'api' => [
+            'class' => 'app\modules\Api\ApiModule',
+        ],
+        
     ],
     'params' => $params,
 ];
